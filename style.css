@@ -30,12 +30,16 @@ h1 + p {
     text-align: right;
 }
 
-label, input, textarea, button {
+label,
+input,
+textarea,
+button {
     padding: 0.5em;
     font: 1.2em sans-serif;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     border: 2px solid #999;
     border-radius: 1em;
