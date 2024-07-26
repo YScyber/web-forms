@@ -62,6 +62,13 @@ input:focus {
     border-color: #000;
 }
 
+div.field-description {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    margin-top: -16px;
+}
+
 p.button {
     margin-top: 50px;
 }
@@ -80,13 +87,6 @@ button:hover {
     background-color: #333;
     color: #fff;
     cursor: pointer;
-}
-
-div.field-description {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: start;
-    margin-top: -16px;
 }
 
 span.description {
