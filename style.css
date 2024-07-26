@@ -69,6 +69,12 @@ div.field-description {
     margin-top: -16px;
 }
 
+span.description {
+    padding: 0.3em 0 0 1em;
+    color: #757575;
+    font-size: 1em;
+}
+
 p.button {
     margin-top: 50px;
 }
@@ -87,10 +93,4 @@ button:hover {
     background-color: #333;
     color: #fff;
     cursor: pointer;
-}
-
-span.description {
-    padding: 0.3em 0 0 1em;
-    color: #757575;
-    font-size: 1em;
 }
