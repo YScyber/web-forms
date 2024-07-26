@@ -14,13 +14,6 @@ header {
     border-bottom: 2px solid #999;
 }
 
-form {
-    margin: 20px auto 0;
-    padding: 1em;
-    width: 90%;
-    max-width: 980px;
-}
-
 h1 {
     text-align: center;
     letter-spacing: 3px;
@@ -35,6 +28,13 @@ span.required {
     border: 1px solid #f00;
     border-radius: 0.3em;
     color: #f00;
+}
+
+form {
+    margin: 20px auto 0;
+    padding: 1em;
+    width: 90%;
+    max-width: 980px;
 }
 
 label,
