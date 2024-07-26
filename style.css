@@ -75,7 +75,7 @@ button:hover {
     cursor: pointer;
 }
 
-.required {
+span.required {
     padding: 0 0.4em;
     border: 1px solid #f00;
     border-radius: 0.3em;
