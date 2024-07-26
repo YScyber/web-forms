@@ -30,6 +30,13 @@ h1 + p {
     text-align: right;
 }
 
+span.required {
+    padding: 0 0.4em;
+    border: 1px solid #f00;
+    border-radius: 0.3em;
+    color: #f00;
+}
+
 label,
 input,
 textarea,
@@ -73,13 +80,6 @@ button:hover {
     background-color: #333;
     color: #fff;
     cursor: pointer;
-}
-
-span.required {
-    padding: 0 0.4em;
-    border: 1px solid #f00;
-    border-radius: 0.3em;
-    color: #f00;
 }
 
 div.field-description {
