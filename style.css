@@ -83,8 +83,6 @@ p.button {
 }
 
 form button {
-    display: block;
-    margin: 0 auto;
     width: 10em;
     border: none;
     border-radius: 1em;
