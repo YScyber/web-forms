@@ -37,28 +37,28 @@ form {
     max-width: 980px;
 }
 
-label,
-input,
-textarea,
-button {
+form label,
+form input,
+form textarea,
+form button {
     padding: 0.5em;
     font: 1.2em sans-serif;
 }
 
-input,
-textarea {
+form input,
+form textarea {
     width: 100%;
     border: 2px solid #999;
     border-radius: 1em;
     box-sizing: border-box;
 }
 
-label {
+form label {
     display: block;
     text-align: left;
 }
 
-input:focus {
+form input:focus {
     border-color: #000;
 }
 
@@ -79,7 +79,7 @@ p.button {
     margin-top: 50px;
 }
 
-button {
+form button {
     display: block;
     margin: 0 auto;
     width: 10em;
@@ -89,7 +89,7 @@ button {
     color: #fff;
 }
 
-button:hover {
+form button:hover {
     background-color: #333;
     color: #fff;
     cursor: pointer;
