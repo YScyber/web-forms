@@ -82,7 +82,7 @@ span.required {
     color: #f00;
 }
 
-.field-description {
+div.field-description {
     display: flex;
     flex-direction: column-reverse;
     align-items: start;
