@@ -90,6 +90,7 @@ form button {
     color: #fff;
 }
 
+form button:focus,
 form button:hover {
     background-color: #333;
     color: #fff;
