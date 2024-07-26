@@ -45,17 +45,17 @@ form button {
     font: 1.2em sans-serif;
 }
 
+form label {
+    display: block;
+    text-align: left;
+}
+
 form input,
 form textarea {
     width: 100%;
     border: 2px solid #999;
     border-radius: 1em;
     box-sizing: border-box;
-}
-
-form label {
-    display: block;
-    text-align: left;
 }
 
 form input:focus {
