@@ -30,6 +30,13 @@ span.required {
     color: #f00;
 }
 
+span.any {
+    padding: 0 0.4em;
+    border: 1px solid #000;
+    border-radius: 0.3em;
+    color: #000;
+}
+
 form {
     margin: 20px auto 0;
     padding: 1em;
