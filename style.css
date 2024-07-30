@@ -6,6 +6,10 @@ body {
     max-width: 1024px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: center;
