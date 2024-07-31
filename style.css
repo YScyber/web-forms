@@ -87,6 +87,7 @@ span.description {
 
 p.button {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1em 0 0 0;
