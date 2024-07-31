@@ -101,6 +101,9 @@ form button {
     color: #fff;
 }
 
+small {
+    padding: 1em 0 0 0;
+}
 form button:focus,
 form button:hover {
     background-color: #333;
