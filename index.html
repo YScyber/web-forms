@@ -8,46 +8,27 @@
 </head>
 <body>
     <header>
-        <img src="https://yscyber.github.io/web-forms/logo_text.png" alt="テキスト付きロゴ画像" width="150px" height="50px" />
+        <img src="logo_text.png" alt="テキスト付きロゴ画像" width="150px" height="50px" />
     </header>
-    <h1>お問い合わせ</h1>
-    <div class="supplement">
-        <p>必須項目には <strong><span class="required">必須</span></strong> が付いています</p>
-        <p>任意項目には <strong><span class="any">任意</span></strong> が付いています</p>
+    <div class="wrapper">
+        <div class="supplement">
+            <h1>ログインページ</h1>
+            <p>こちらはサンプルのログインページとなっていますので、入力されたテキストはどこにも流出されません。ご不安でしたら、入力の動作確認が済み次第【ログイン】ボタンを押さずに入力したテキストを削除してください。</p>
+        </div>
+        <form>
+            <p>
+                <label for="username">ユーザー名</label>
+                <input type="text" id="username" required />
+            </p>
+            <p>
+                <label for="pwd">パスワード</label>
+                <input type="password" id="pwd" required />
+            </p>
+            <p class="button">
+                <button type="submit">ログイン</button>
+                <small>【ログイン】ボタンは機能していません</small>
+            </p>
+        </form>
     </div>
-    <form>
-        <p>
-            <label for="name"><strong>氏名 <span class="required">必須</span></strong></label>
-            <div class="field-description">
-                <span id="name-desc" class="description">例）山田太郎</span>
-                <input type="text" id="name" name="username" aria-describedby="name-desc" required />
-            </div>
-        </p>
-        <p>
-            <label for="mail"><strong>メールアドレス <span class="required">必須</span></strong></label>
-            <div class="field-description">
-                <span id="mail-desc" class="description">例）taro@example.com</span>
-                <input type="email" id="mail" name="usermail" aria-describedby="mail-desc" required />
-            </div>
-        </p>
-        <p>
-            <label for="phone"><strong>電話番号 <span class="any">任意</span></strong></label>
-            <div class="field-description">
-                <span id="phone-desc" class="description">例）09012345678</span>
-                <input type="tel" id="phone" name="userphone" aria-describedby="phone-desc" />
-            </div>
-        </p>
-        <p>
-            <label for="msg"><strong>お問い合わせ内容 <span class="required">必須</span></strong></label>
-            <div class="field-description">
-                <span id="msg-desc" class="description">※ 120文字以内でご記入ください</span>
-                <textarea id="msg" name="usermessage" maxlength="120" rows="5" aria-describedby="msg-desc" required></textarea>
-            </div>
-        </p>
-        <p class="button">
-            <button type="submit">入力内容の確認</button>
-            <small>【入力内容の確認】ボタンは機能していません</small>
-        </p>
-    </form>
 </body>
 </html>
