@@ -4,6 +4,7 @@ body {
     padding: 1em;
     width: 90%;
     max-width: 980px;
+    background-color: rgba(238, 238, 238, 0.5);
 }
 
 * {
@@ -11,81 +12,58 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0 0 1em 0;
-    border-bottom: 2px solid #999;
 }
 
-h1 {
-    text-align: center;
+div.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.wrapper div.supplement,
+div.wrapper form {
+    flex: 1;
+    margin: 0;
+    padding: 2em;
+}
+
+div.wrapper div.supplement h1 {
+    font-size: 2.7em;
     letter-spacing: 3px;
 }
 
-div.supplement {
-    text-align: right;
+div.wrapper form {
+    border: 5px double #000;
+    border-radius: 1em;
+    background-color: #fff;
+    font: 1.2em/1.5 sans-serif;
 }
 
-span.required {
-    padding: 0 0.4em;
-    border: 1px solid #f00;
-    border-radius: 0.3em;
-    color: #f00;
-}
-
-span.any {
-    padding: 0 0.4em;
-    border: 1px solid #000;
-    border-radius: 0.3em;
-    color: #000;
-}
-
-form {
-    margin: 20px auto 0;
-    padding: 1em;
-    width: 90%;
-    max-width: 980px;
-}
-
-form label,
-form input,
-form textarea,
-form button {
+div.wrapper form p label,
+div.wrapper form p input,
+div.wrapper form p.button button {
     padding: 0.5em;
-    font: 1.2em sans-serif;
+    font-family: inherit;
+    font-size: 100%;
 }
 
-form label {
+div.wrapper form p label {
     display: block;
     padding-left: 0;
 }
 
-form input,
-form textarea {
+div.wrapper form p input {
     width: 100%;
     border: 2px solid #999;
-    border-radius: 0.3em;
+    border-radius: 0.5em;
 }
 
-form input:focus {
+div.wrapper form p input:focus {
     border-color: #000;
 }
 
-div.field-description {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: start;
-    margin-top: -16px;
-}
 
-span.description {
-    padding: 0.3em 0 0 0.5em;
-    color: #757575;
-    font-size: 1em;
-}
-
-p.button {
+div.wrapper form p.button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,21 +71,58 @@ p.button {
     padding: 1em 0 0 0;
 }
 
-form button {
+div.wrapper form p.button button {
     width: 10em;
     border: none;
     border-radius: 0.3em;
-    background-color: #000;
+    background-color: #00f;
     color: #fff;
 }
 
-form button:focus,
-form button:hover {
-    background-color: #333;
+div.wrapper form p.button button:focus,
+div.wrapper form p.button button:hover {
+    background-color: #2525c1;
     color: #fff;
     cursor: pointer;
 }
 
-small {
+div.wrapper form p.button small {
     padding: 1em 0 0 0;
+}
+
+@media screen and (max-width: 799px) {
+    header {
+        padding: 0;
+    }
+
+    div.wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.wrapper div.supplement {
+        margin: 0;
+        padding: 0 0 1em 0;
+    }
+
+    div.wrapper div.supplement h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    div.wrapper div.supplement p {
+        font-size: 0.7em;
+    }
+
+    div.wrapper form {
+        padding: 1em;
+        font: 1em/1.5 sans-serif;
+    }
+
+    div.wrapper form p label,
+    div.wrapper form p input,
+    div.wrapper form p.button button {
+        font-family: inherit;
+        font-size: 100%;
+    }
 }
