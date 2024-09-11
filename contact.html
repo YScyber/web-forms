@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせフォーム</title>
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 1em;
+            width: 90%;
+            max-width: 980px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0 1em 0;
+            border-bottom: 2px solid #999;
+        }
+
+        h1 {
+            text-align: center;
+            letter-spacing: 3px;
+        }
+
+        div.supplement {
+            text-align: right;
+        }
+
+        span.required {
+            padding: 0 0.4em;
+            border: 1px solid #f00;
+            border-radius: 0.3em;
+            color: #f00;
+        }
+
+        span.any {
+            padding: 0 0.4em;
+            border: 1px solid #000;
+            border-radius: 0.3em;
+            color: #000;
+        }
+
+        form {
+            margin: 20px auto 0;
+            padding: 1em;
+            width: 90%;
+            max-width: 980px;
+        }
+
+        form label,
+        form input,
+        form textarea,
+        form button {
+            padding: 0.5em;
+            font: 1.2em sans-serif;
+        }
+
+        form label {
+            display: block;
+            padding-left: 0;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            border: 2px solid #999;
+            border-radius: 0.3em;
+        }
+
+        form input:focus {
+            border-color: #000;
+        }
+
+        div.field-description {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: start;
+            margin-top: -16px;
+        }
+
+        span.description {
+            padding: 0.3em 0 0 0.5em;
+            color: #757575;
+            font-size: 1em;
+        }
+
+        p.button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em 0 0 0;
+        }
+
+        form button {
+            width: 10em;
+            border: none;
+            border-radius: 0.3em;
+            background-color: #000;
+            color: #fff;
+        }
+
+        form button:focus,
+        form button:hover {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        small {
+            padding: 1em 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://yscyber.github.io/web-forms/logo_text.png" alt="テキスト付きロゴ画像" width="150px" height="50px" />
+    </header>
+    <h1>お問い合わせ</h1>
+    <div class="supplement">
+        <p>必須項目には <strong><span class="required">必須</span></strong> が付いています</p>
+        <p>任意項目には <strong><span class="any">任意</span></strong> が付いています</p>
+    </div>
+    <form>
+        <p>
+            <label for="name"><strong>氏名 <span class="required">必須</span></strong></label>
+            <div class="field-description">
+                <span id="name-desc" class="description">例）山田太郎</span>
+                <input type="text" id="name" name="username" aria-describedby="name-desc" required />
+            </div>
+        </p>
+        <p>
+            <label for="mail"><strong>メールアドレス <span class="required">必須</span></strong></label>
+            <div class="field-description">
+                <span id="mail-desc" class="description">例）taro@example.com</span>
+                <input type="email" id="mail" name="usermail" aria-describedby="mail-desc" required />
+            </div>
+        </p>
+        <p>
+            <label for="phone"><strong>電話番号 <span class="any">任意</span></strong></label>
+            <div class="field-description">
+                <span id="phone-desc" class="description">例）09012345678</span>
+                <input type="tel" id="phone" name="userphone" aria-describedby="phone-desc" />
+            </div>
+        </p>
+        <p>
+            <label for="msg"><strong>お問い合わせ内容 <span class="required">必須</span></strong></label>
+            <div class="field-description">
+                <span id="msg-desc" class="description">※ 120文字以内でご記入ください</span>
+                <textarea id="msg" name="usermessage" maxlength="120" rows="5" aria-describedby="msg-desc" required></textarea>
+            </div>
+        </p>
+        <p class="button">
+            <button type="submit">入力内容の確認</button>
+            <small>【入力内容の確認】ボタンは機能していません</small>
+        </p>
+    </form>
+</body>
+</html>
